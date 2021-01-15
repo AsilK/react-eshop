@@ -79,11 +79,11 @@ const SignIn = props => {
             </div>
           </div>
 
-          <div className="links">
+      <div className="links">
             <Link to="/recovery">
               Reset Password
               </Link>
-          </div>
+          </div>  
 
         </form>
       </div>
