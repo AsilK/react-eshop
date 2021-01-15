@@ -14,10 +14,11 @@ import WithAdminAuth from './hoc/withAdminAuth';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 import AdminLayout from './layouts/AdminLayout';
-import DashboardLayout from './layouts/Dashboardlayout';
+import DashboardLayout from './layouts/DashboardLayout';
 
 // pages
 import Homepage from './pages/Homepage';
+import Search from './pages/Search';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Recovery from './pages/Recovery';
@@ -43,6 +44,11 @@ const App = props => {
           </HomepageLayout>
         )}
         />
+        <Route path="/search" render={() => (
+          <MainLayout>
+            <Search />
+          </MainLayout>
+        )} />
         <Route path="/registration" render={() => (
           <MainLayout>
             <Registration />
