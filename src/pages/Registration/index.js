@@ -4,11 +4,8 @@ import Signup from './../../components/Signup';
 
 import './styles.scss';
 
-class Registration extends Component {
-
-  render() {
+const Registration = props => {
     return <Signup />;
-  }
-}
+  };
 
 export default Registration;
